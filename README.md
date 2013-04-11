@@ -18,17 +18,17 @@ This file contains the following sections:
 
   1) SYSTEM REQUIREMENT
 
-	2) GENERAL NOTES
+  2) GENERAL NOTES
 	
-	3) LICENSE
+  3) LICENSE
 
-	4) COMPILING ON WIN32 WITH VISUAL C++ 2012 EXPRESS EDITION
+  4) COMPILING ON WIN32 WITH VISUAL C++ 2012 EXPRESS EDITION
 
-	5) COMPILING ON GNU/LINUX
+  5) COMPILING ON GNU/LINUX
 	
-	6) FEATURES
+  6) FEATURES
 	
-	7) KNOWN ISSUES
+  7) KNOWN ISSUES
   
   8) REFERENCES
 
@@ -38,7 +38,9 @@ _______________________________________
 1) SYSTEM REQUIREMENTS
 _______________________________________
 
+The Git repository contains also a built version of the Renderer that can be run on Windows OS. (Sorry for not including a Linux binary also)
 
+In order to build from code :
 
 The project uses the NGL(NCCA Graphics Library) video library that must also be compiled and used, both under Linux and Windows.
 The library is created and maintained by Jon Macey @ Bournemouth University and is for education purposes only.
