@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36A3FC21-FDAE-4F2F-942E-64A71CC75CE0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SimpleNGL</RootNamespace>
+    <ProjectName>DeferredRenderer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="GLUT.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="GLUT.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)include;C:\Qt\4.8.1\include\QtOpenGL;C:\Qt\4.8.1\include\QtCore;C:\Qt\4.8.1\include;D:\NGL\include;D:\NGL\Prerequisites\glew-1.9.0;D:\NGL\Prerequisites\glew-1.9.0\GL;D:\NGL\Prerequisites\glut-3.7.6;C:\boost;D:\NGL\src\ngl;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IncludePath>C:\Qt\4.8.1\include\QtOpenGL;C:\Qt\4.8.1\include\QtCore;C:\Qt\4.8.1\include;D:\NGL\src\ngl;D:\NGL\include;$(ProjectDir)include;C:\NGL\Prerequisites\glew-1.9.0;C:\NGL\Prerequisites\glew-1.9.0\GL;C:\NGL\Prerequisites\glut-3.7.6;C:\boost;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DEBUG_CONSOLE_ENABLED;_WINDOWS;UNICODE;WIN32;BUILDING_DLL;QT_LARGEFILE_SUPPORT;GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED;ADDLARGEMODELS;USING_GLEW;GLEW_STATIC;_WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>"..\Qt\4.8.1\include\QtCore";"..\Qt\4.8.1\include\QtGui";"..\Qt\4.8.1\include\QtOpenGL";"..\Qt\4.8.1\include";"\usr\local\include";"..\Program Files (x86)\boost\boost_1_44";"\NGL\Support\glew";"include\ngl";"src\ngl";"src\shaders";"..\Qt\4.8.1\include\ActiveQt";"debug";..\Qt\4.8.1\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\NGL\lib\NGL.lib;glew32s.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;c:\Qt\4.8.1\lib\QtOpenGLd4.lib;c:\Qt\4.8.1\lib\QtGuid4.lib;c:\Qt\4.8.1\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y "$(ProjectDir)src\GLWindow.cpp" "$(ProjectDir)GLWindow.cpp"
+copy /Y "$(ProjectDir)include\GLWindow.h" "$(ProjectDir)GLWindow.h"
+copy /Y "$(ProjectDir)src\MainWindow.cpp" "$(ProjectDir)MainWindow.cpp"
+copy /Y "$(ProjectDir)include\MainWindow.h" "$(ProjectDir)MainWindow.h"
+moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_GLWindow.cpp GLWindow.h
+moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_MainWindow.cpp MainWindow.h
+
+copy /Y "$(ProjectDir)moc_GLWindow.cpp" "$(ProjectDir)src\moc_GLWindow.cpp"
+copy /Y "$(ProjectDir)moc_MainWindow.cpp" "$(ProjectDir)src\moc_MainWindow.cpp"
+
+del "$(ProjectDir)moc_GLWindow.cpp"
+del "$(ProjectDir)moc_MainWindow.cpp"
+del "$(ProjectDir)GLWindow.cpp"
+del "$(ProjectDir)MainWindow.cpp"
+del "$(ProjectDir)GLWindow.h"
+del "$(ProjectDir)MainWindow.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;BUILDING_DLL;QT_LARGEFILE_SUPPORT;GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED;ADDLARGEMODELS;USING_GLEW;GLEW_STATIC;_WIN32;QT_DLL;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>"..\Qt\4.8.1\include\QtCore";"..\Qt\4.8.1\include\QtGui";"..\Qt\4.8.1\include\QtOpenGL";"..\Qt\4.8.1\include";"\usr\local\include";"..\Program Files (x86)\boost\boost_1_44";"\NGL\Support\glew";"include\ngl";"src\ngl";"src\shaders";"..\Qt\4.8.1\include\ActiveQt";"debug";..\Qt\4.8.1\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>D:\NGL\lib\NGL.lib;glew32s.lib;glu32.lib;opengl32.lib;gdi32.lib;user32.lib;c:\Qt\4.8.1\lib\QtOpenGL4.lib;c:\Qt\4.8.1\lib\QtGui4.lib;c:\Qt\4.8.1\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /Y "$(ProjectDir)src\GLWindow.cpp" "$(ProjectDir)GLWindow.cpp"
+copy /Y "$(ProjectDir)include\GLWindow.h" "$(ProjectDir)GLWindow.h"
+copy /Y "$(ProjectDir)src\MainWindow.cpp" "$(ProjectDir)MainWindow.cpp"
+copy /Y "$(ProjectDir)include\MainWindow.h" "$(ProjectDir)MainWindow.h"
+moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_GLWindow.cpp GLWindow.h
+moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_MainWindow.cpp MainWindow.h
+
+copy /Y "$(ProjectDir)moc_GLWindow.cpp" "$(ProjectDir)src\moc_GLWindow.cpp"
+copy /Y "$(ProjectDir)moc_MainWindow.cpp" "$(ProjectDir)src\moc_MainWindow.cpp"
+
+del "$(ProjectDir)moc_GLWindow.cpp"
+del "$(ProjectDir)moc_MainWindow.cpp"
+del "$(ProjectDir)GLWindow.cpp"
+del "$(ProjectDir)MainWindow.cpp"
+del "$(ProjectDir)GLWindow.h"
+del "$(ProjectDir)MainWindow.h"
+
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\NGL\NGL.vcxproj">
+      <Project>{4f290fd2-6e58-3851-95d3-f6466d62fbe2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConeLightVolume.h" />
+    <ClInclude Include="include\DeferredShading.h" />
+    <ClInclude Include="include\GLWindow.h" />
+    <ClInclude Include="include\MainWindow.h" />
+    <ClInclude Include="include\ModelLoader.h" />
+    <ClInclude Include="include\ngl\Meshes.h" />
+    <ClInclude Include="include\ObjectLoader.h" />
+    <ClInclude Include="include\SphereLightVolume.h" />
+    <ClInclude Include="include\SpotLight.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ConeLightVolume.cpp" />
+    <ClCompile Include="src\DeferredDirectionalLight.cpp" />
+    <ClCompile Include="src\DeferredPointLight.cpp" />
+    <ClCompile Include="src\DeferredShading.cpp" />
+    <ClCompile Include="src\DeferredSpotLight.cpp" />
+    <ClCompile Include="src\GLWindow.cpp" />
+    <ClCompile Include="src\InitFileParser.cpp" />
+    <ClCompile Include="src\LightManager.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="src\moc_GLWindow.cpp" />
+    <ClCompile Include="src\moc_MainWindow.cpp" />
+    <ClCompile Include="src\ModelLoader.cpp" />
+    <ClCompile Include="src\ModelManager.cpp" />
+    <ClCompile Include="src\ngl\createDefaultVAOs.cpp" />
+    <ClCompile Include="src\ObjectLoader.cpp" />
+    <ClCompile Include="src\SphereLightVolume.cpp" />
+    <ClCompile Include="src\Spotlight.cpp" />
+    <ClCompile Include="src\SSAO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\deferredFragmentDirectional.glsl" />
+    <None Include="shaders\deferredFragmentPointLight.glsl" />
+    <None Include="shaders\deferredFragmentSpotLight.glsl" />
+    <None Include="shaders\deferredVertexDirectional.glsl" />
+    <None Include="shaders\deferredVertexPointLight.glsl" />
+    <None Include="shaders\deferredVertexSpotLight.glsl" />
+    <None Include="shaders\Phong.fs" />
+    <None Include="shaders\Phong.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

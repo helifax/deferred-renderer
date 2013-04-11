@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['m_5factive',['m_active',['../classngl_1_1_light.html#a1cdd46b20e1d7f6e8d4aa01a4b3f72ad',1,'ngl::Light']]],
+  ['m_5fambient',['m_ambient',['../classngl_1_1_light.html#acc8c0099d1b3437bc814d19de9d5025f',1,'ngl::Light']]],
+  ['m_5fconevolume',['m_coneVolume',['../class_object_loader.html#ab42fe978a30e5238cad996b32d309b4d',1,'ObjectLoader']]],
+  ['m_5fconstantatten',['m_constantAtten',['../classngl_1_1_light.html#ae599f2dfec737b23af75cbcb6be6613e',1,'ngl::Light']]],
+  ['m_5fcutoffangle',['m_cutoffAngle',['../classngl_1_1_light.html#a61ea1115270a6b4798a6383a8c2c1b26',1,'ngl::Light']]],
+  ['m_5fdiffuse',['m_diffuse',['../classngl_1_1_light.html#a7bc1cdc3603b217e66bf4e1d9b1b8e8c',1,'ngl::Light']]],
+  ['m_5flight',['m_light',['../class_object_loader.html#a3d70ee2ce56daeaced002dd6d3797283',1,'ObjectLoader']]],
+  ['m_5flightmode',['m_lightMode',['../classngl_1_1_light.html#acea764757d046277f3dc5d3f4adf5597',1,'ngl::Light']]],
+  ['m_5flighttype',['m_lightType',['../class_object_loader.html#a2ea656821677e535f3e0044536c55c9f',1,'ObjectLoader']]],
+  ['m_5flinearatten',['m_linearAtten',['../classngl_1_1_light.html#aebe8996368d8c7598cffba36883084e0',1,'ngl::Light']]],
+  ['m_5fposition',['m_position',['../classngl_1_1_light.html#afe8a51aeb598b51b3c42a6ecddd38d08',1,'ngl::Light']]],
+  ['m_5fquadraticatten',['m_quadraticAtten',['../classngl_1_1_light.html#a926e5c7567ad0b2e09548dd6a8e60d7c',1,'ngl::Light']]],
+  ['m_5fspecular',['m_specular',['../classngl_1_1_light.html#aa12f58491b9237345930721b5ac94932',1,'ngl::Light']]],
+  ['m_5fspotlight',['m_spotlight',['../class_object_loader.html#a759ade5adb03d58bca0ff4b966994081',1,'ObjectLoader']]],
+  ['m_5ftextureindex',['m_textureIndex',['../class_object_loader.html#a477c658216ae723c06ffefb1cc123a04',1,'ObjectLoader']]],
+  ['m_5ftransform',['m_transform',['../classngl_1_1_light.html#ab905d7f0ee91e2a482ce5d4d99bb81fd',1,'ngl::Light']]],
+  ['mainwindow',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a93cfdcac35db98baf6a7d2c2738a2006',1,'MainWindow::MainWindow()']]],
+  ['mainwindow_2eh',['MainWindow.h',['../_main_window_8h.html',1,'']]]
+];

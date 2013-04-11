@@ -1,0 +1,44 @@
+\hypertarget{class_cone_light_volume}{\section{Cone\-Light\-Volume Class Reference}
+\label{class_cone_light_volume}\index{Cone\-Light\-Volume@{Cone\-Light\-Volume}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cone_light_volume_ab8626d8dc7a7acaf9c5c499f5ee10c07}{Cone\-Light\-Volume} (ngl\-::\-Vec3 \-\_\-light\-Position, ngl\-::\-Colour \-\_\-light\-Intensity, ngl\-::\-Real \-\_\-cone\-Radius, ngl\-::\-Real \-\_\-cone\-Height, ngl\-::\-Vec3 \-\_\-cone\-Orientation)
+\begin{DoxyCompactList}\small\item\em ctor for creating a Cone volume for the light. \end{DoxyCompactList}\item 
+\hypertarget{class_cone_light_volume_ac3227dccbeb84973aba06381f5b3f750}{\hyperlink{class_cone_light_volume_ac3227dccbeb84973aba06381f5b3f750}{$\sim$\-Cone\-Light\-Volume} ()}\label{class_cone_light_volume_ac3227dccbeb84973aba06381f5b3f750}
+
+\begin{DoxyCompactList}\small\item\em default dtor \end{DoxyCompactList}\item 
+\hypertarget{class_cone_light_volume_a34d75c868c3797bb8d218ec4e4424231}{ngl\-::\-Vec2 \hyperlink{class_cone_light_volume_a34d75c868c3797bb8d218ec4e4424231}{get\-Radius\-And\-Heigth} () const }\label{class_cone_light_volume_a34d75c868c3797bb8d218ec4e4424231}
+
+\begin{DoxyCompactList}\small\item\em Returns the Radius and Height. \end{DoxyCompactList}\item 
+\hypertarget{class_cone_light_volume_a25eb3fece7c140c43c4672045773f408}{ngl\-::\-Vec3 \hyperlink{class_cone_light_volume_a25eb3fece7c140c43c4672045773f408}{get\-New\-Position} () const }\label{class_cone_light_volume_a25eb3fece7c140c43c4672045773f408}
+
+\begin{DoxyCompactList}\small\item\em Returns the New Position Coordinates. \end{DoxyCompactList}\item 
+\hypertarget{class_cone_light_volume_ab90a22c87d468647a6cce9a555c5b4be}{ngl\-::\-Vec3 \hyperlink{class_cone_light_volume_ab90a22c87d468647a6cce9a555c5b4be}{get\-Cone\-Orientation} () const }\label{class_cone_light_volume_ab90a22c87d468647a6cce9a555c5b4be}
+
+\begin{DoxyCompactList}\small\item\em Returns the New Cone Orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_cone_light_volume_ab8626d8dc7a7acaf9c5c499f5ee10c07}{\index{Cone\-Light\-Volume@{Cone\-Light\-Volume}!Cone\-Light\-Volume@{Cone\-Light\-Volume}}
+\index{Cone\-Light\-Volume@{Cone\-Light\-Volume}!ConeLightVolume@{Cone\-Light\-Volume}}
+\subsubsection[{Cone\-Light\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}Cone\-Light\-Volume\-::\-Cone\-Light\-Volume (
+\begin{DoxyParamCaption}
+\item[{ngl\-::\-Vec3}]{\-\_\-light\-Position, }
+\item[{ngl\-::\-Colour}]{\-\_\-light\-Intensity, }
+\item[{ngl\-::\-Real}]{\-\_\-cone\-Radius, }
+\item[{ngl\-::\-Real}]{\-\_\-cone\-Height, }
+\item[{ngl\-::\-Vec3}]{\-\_\-cone\-Orientation}
+\end{DoxyParamCaption}
+)}}\label{class_cone_light_volume_ab8626d8dc7a7acaf9c5c499f5ee10c07}
+
+
+ctor for creating a Cone volume for the light. 
+
+Reguired parameters\-: light position light intensity cone radius cone height cone orientation in degrees 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_cone_light_volume_8h}{Cone\-Light\-Volume.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Cone\-Light\-Volume.\-cpp\end{DoxyCompactItemize}

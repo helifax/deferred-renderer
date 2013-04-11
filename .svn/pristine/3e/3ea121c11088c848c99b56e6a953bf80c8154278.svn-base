@@ -1,0 +1,57 @@
+\hypertarget{class_object_loader}{\section{Object\-Loader Class Reference}
+\label{class_object_loader}\index{Object\-Loader@{Object\-Loader}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_object_loader_ac28a22d6234864b00d3078bc1676a852}{\hyperlink{class_object_loader_ac28a22d6234864b00d3078bc1676a852}{Object\-Loader} (const std\-::string \-\_\-shader\-Program\-Name, const std\-::string \-\_\-vertex\-Shader\-File\-Name, const std\-::string \-\_\-fragment\-Shader\-Filename)}\label{class_object_loader_ac28a22d6234864b00d3078bc1676a852}
+
+\begin{DoxyCompactList}\small\item\em ctor for loading model and attached textures and shaders. It creates the shader \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_ac2397df02e74d50980604991fb772585}{\hyperlink{class_object_loader_ac2397df02e74d50980604991fb772585}{Object\-Loader} (const std\-::string \-\_\-shader\-Program\-Name)}\label{class_object_loader_ac2397df02e74d50980604991fb772585}
+
+\begin{DoxyCompactList}\small\item\em ctor for loading model and textures using shaders that already exist. It uses an existing shader \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_abe35e670f22d62f56a95e28b67b43c93}{\hyperlink{class_object_loader_abe35e670f22d62f56a95e28b67b43c93}{$\sim$\-Object\-Loader} ()}\label{class_object_loader_abe35e670f22d62f56a95e28b67b43c93}
+
+\begin{DoxyCompactList}\small\item\em dctor \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a13165ae8f1c06aa6d2e42a25cce1ccbe}{G\-Luint {\bfseries get\-Shader\-Program\-Handle} () const }\label{class_object_loader_a13165ae8f1c06aa6d2e42a25cce1ccbe}
+
+\item 
+\hypertarget{class_object_loader_a1545820e46bc97530d34454b2bfe7b20}{void \hyperlink{class_object_loader_a1545820e46bc97530d34454b2bfe7b20}{set\-Shader\-As\-Active} () const }\label{class_object_loader_a1545820e46bc97530d34454b2bfe7b20}
+
+\begin{DoxyCompactList}\small\item\em Set the current shader as the active one. All the information sent to the shader will be on this one. \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a0e17d739447bc8b758f7d0826ff0d82e}{void \hyperlink{class_object_loader_a0e17d739447bc8b758f7d0826ff0d82e}{load\-Mesh} (const std\-::string \-\_\-mesh\-File\-Name)}\label{class_object_loader_a0e17d739447bc8b758f7d0826ff0d82e}
+
+\begin{DoxyCompactList}\small\item\em loads a Mesh, O\-B\-J file. Method not tested yet. \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_ab1680ee5acad9c8a02ff7b87460c9d30}{void \hyperlink{class_object_loader_ab1680ee5acad9c8a02ff7b87460c9d30}{load\-Texture} (const std\-::string \-\_\-texture\-File\-Name)}\label{class_object_loader_ab1680ee5acad9c8a02ff7b87460c9d30}
+
+\begin{DoxyCompactList}\small\item\em loads a texture file. Method not tested yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_object_loader_a477c658216ae723c06ffefb1cc123a04}{G\-Lint \hyperlink{class_object_loader_a477c658216ae723c06ffefb1cc123a04}{m\-\_\-texture\-Index}}\label{class_object_loader_a477c658216ae723c06ffefb1cc123a04}
+
+\begin{DoxyCompactList}\small\item\em Index for counting textures loaded and used by this shader. \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a25b0c1c8390e13a351ab7334fc1dc1fc}{bool {\bfseries m\-\_\-mesh\-Is\-Loaded}}\label{class_object_loader_a25b0c1c8390e13a351ab7334fc1dc1fc}
+
+\item 
+\hypertarget{class_object_loader_a3d70ee2ce56daeaced002dd6d3797283}{std\-::vector$<$ \hyperlink{classngl_1_1_light}{ngl\-::\-Light} $\ast$ $>$ \hyperlink{class_object_loader_a3d70ee2ce56daeaced002dd6d3797283}{m\-\_\-light}}\label{class_object_loader_a3d70ee2ce56daeaced002dd6d3797283}
+
+\begin{DoxyCompactList}\small\item\em vector containing all the point lights in the scene \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a759ade5adb03d58bca0ff4b966994081}{std\-::vector$<$ \hyperlink{class_spotlight}{Spotlight} $\ast$ $>$ \hyperlink{class_object_loader_a759ade5adb03d58bca0ff4b966994081}{m\-\_\-spotlight}}\label{class_object_loader_a759ade5adb03d58bca0ff4b966994081}
+
+\begin{DoxyCompactList}\small\item\em vector containing all the point lights in the scene \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a2ea656821677e535f3e0044536c55c9f}{std\-::vector$<$ ngl\-::\-L\-I\-G\-H\-T\-M\-O\-D\-E\-S $>$ \hyperlink{class_object_loader_a2ea656821677e535f3e0044536c55c9f}{m\-\_\-light\-Type}}\label{class_object_loader_a2ea656821677e535f3e0044536c55c9f}
+
+\begin{DoxyCompactList}\small\item\em vector containing all the light types in a scene \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_ab42fe978a30e5238cad996b32d309b4d}{std\-::vector$<$ \hyperlink{class_cone_light_volume}{Cone\-Light\-Volume} $\ast$ $>$ \hyperlink{class_object_loader_ab42fe978a30e5238cad996b32d309b4d}{m\-\_\-cone\-Volume}}\label{class_object_loader_ab42fe978a30e5238cad996b32d309b4d}
+
+\begin{DoxyCompactList}\small\item\em Create a vector of pointers to the specific Light Type Geometry. \end{DoxyCompactList}\item 
+\hypertarget{class_object_loader_a3f532bcb4d28d0725944928fef9fea3e}{std\-::vector$<$ \hyperlink{class_sphere_light_volume}{Sphere\-Light\-Volume} $\ast$ $>$ {\bfseries m\-\_\-sphere\-Volume}}\label{class_object_loader_a3f532bcb4d28d0725944928fef9fea3e}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_object_loader_8h}{Object\-Loader.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Object\-Loader.\-cpp\end{DoxyCompactItemize}

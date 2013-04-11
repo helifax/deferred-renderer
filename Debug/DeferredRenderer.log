@@ -1,0 +1,75 @@
+﻿Build started 3/28/2013 11:18:19 PM.
+     1>Project "C:\NGL\Projects\DeferredRenderer\DeferredRenderer.vcxproj" on node 2 (Build target(s)).
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1395,5): warning : The referenced project '..\..\NGL\NGL.vcxproj' does not exist.
+     1>PreBuildEvent:
+         copy /Y "C:\NGL\Projects\DeferredRenderer\src\GLWindow.cpp" "C:\NGL\Projects\DeferredRenderer\GLWindow.cpp"
+         copy /Y "C:\NGL\Projects\DeferredRenderer\include\GLWindow.h" "C:\NGL\Projects\DeferredRenderer\GLWindow.h"
+         copy /Y "C:\NGL\Projects\DeferredRenderer\src\MainWindow.cpp" "C:\NGL\Projects\DeferredRenderer\MainWindow.cpp"
+         copy /Y "C:\NGL\Projects\DeferredRenderer\include\MainWindow.h" "C:\NGL\Projects\DeferredRenderer\MainWindow.h"
+         moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_GLWindow.cpp GLWindow.h
+         moc -I"%QTDIR%\include" -I"%QTDIR%\include\QtCore" -I"%QTDIR%\include\QtGui" -omoc_MainWindow.cpp MainWindow.h
+         
+         copy /Y "C:\NGL\Projects\DeferredRenderer\moc_GLWindow.cpp" "C:\NGL\Projects\DeferredRenderer\src\moc_GLWindow.cpp"
+         copy /Y "C:\NGL\Projects\DeferredRenderer\moc_MainWindow.cpp" "C:\NGL\Projects\DeferredRenderer\src\moc_MainWindow.cpp"
+         
+         del "C:\NGL\Projects\DeferredRenderer\moc_GLWindow.cpp"
+         del "C:\NGL\Projects\DeferredRenderer\moc_MainWindow.cpp"
+         del "C:\NGL\Projects\DeferredRenderer\GLWindow.cpp"
+         del "C:\NGL\Projects\DeferredRenderer\MainWindow.cpp"
+         del "C:\NGL\Projects\DeferredRenderer\GLWindow.h"
+         del "C:\NGL\Projects\DeferredRenderer\MainWindow.h"
+         :VCEnd
+                 1 file(s) copied.
+                 1 file(s) copied.
+                 1 file(s) copied.
+                 1 file(s) copied.
+                 1 file(s) copied.
+                 1 file(s) copied.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\Qt\4.8.1\include\QtCore /I..\Qt\4.8.1\include\QtGui /I..\Qt\4.8.1\include\QtOpenGL /I..\Qt\4.8.1\include /I\usr\local\include /I"..\Program Files (x86)\boost\boost_1_44" /I\NGL\Support\glew /Iinclude\ngl /Isrc\ngl /Isrc\shaders /I..\Qt\4.8.1\include\ActiveQt /Idebug /I..\Qt\4.8.1\mkspecs\default /ZI /nologo /W3 /WX- /Od /Oy- /D DEBUG_CONSOLE_ENABLED /D _WINDOWS /D UNICODE /D WIN32 /D BUILDING_DLL /D QT_LARGEFILE_SUPPORT /D GL_DO_NOT_WARN_IF_MULTI_GL_VERSION_HEADERS_INCLUDED /D ADDLARGEMODELS /D USING_GLEW /D GLEW_STATIC /D _WIN32 /D QT_DLL /D QT_OPENGL_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_HAVE_MMX /D QT_HAVE_3DNOW /D QT_HAVE_SSE /D QT_HAVE_MMXEXT /D QT_HAVE_SSE2 /D QT_THREAD_SUPPORT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\GLWindow.cpp src\moc_GLWindow.cpp src\moc_MainWindow.cpp
+         moc_MainWindow.cpp
+     1>c:\ngl\projects\deferredrenderer\include\glwindow.h(116): warning C4373: 'GLWindow::resizeGL': virtual function overrides 'QGLWidget::resizeGL', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 c:\qt\4.8.1\src\opengl\qgl.h(574) : see declaration of 'QGLWidget::resizeGL'
+         moc_GLWindow.cpp
+     1>c:\ngl\projects\deferredrenderer\include\glwindow.h(116): warning C4373: 'GLWindow::resizeGL': virtual function overrides 'QGLWidget::resizeGL', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 c:\qt\4.8.1\src\opengl\qgl.h(574) : see declaration of 'QGLWidget::resizeGL'
+         GLWindow.cpp
+     1>c:\ngl\projects\deferredrenderer\include\glwindow.h(116): warning C4373: 'GLWindow::resizeGL': virtual function overrides 'QGLWidget::resizeGL', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 c:\qt\4.8.1\src\opengl\qgl.h(574) : see declaration of 'QGLWidget::resizeGL'
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(631): warning C4005: 'M_PI' : macro redefinition
+                 c:\qt\4.8.1\src\corelib\kernel\qmath.h(261) : see previous definition of 'M_PI'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(26): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(130): warning C4305: 'argument' : truncation from 'double' to 'ngl::Real'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(164): warning C4305: 'argument' : truncation from 'double' to 'ngl::Real'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(307): warning C4305: 'argument' : truncation from 'double' to 'ngl::Real'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(317): warning C4305: 'argument' : truncation from 'double' to 'ngl::Real'
+     1>c:\ngl\projects\deferredrenderer\src\glwindow.cpp(327): warning C4305: 'argument' : truncation from 'double' to 'ngl::Real'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\NGL\Projects\DeferredRenderer\DeferredRenderer.exe" /INCREMENTAL:NO /NOLOGO C:\NGL\lib\NGL.lib glew32s.lib glu32.lib opengl32.lib gdi32.lib user32.lib c:\Qt\4.8.1\lib\QtOpenGLd4.lib c:\Qt\4.8.1\lib\QtGuid4.lib c:\Qt\4.8.1\lib\QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\NGL\Projects\DeferredRenderer\DeferredRenderer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\NGL\Projects\DeferredRenderer\DeferredRenderer.lib" /MACHINE:X86 Debug\ConeLightVolume.obj
+         Debug\DeferredDirectionalLight.obj
+         Debug\DeferredPointLight.obj
+         Debug\DeferredShading.obj
+         Debug\DeferredSpotLight.obj
+         Debug\GLWindow.obj
+         Debug\InitFileParser.obj
+         Debug\LightManager.obj
+         Debug\main.obj
+         Debug\MainWindow.obj
+         Debug\moc_GLWindow.obj
+         Debug\moc_MainWindow.obj
+         Debug\ModelLoader.obj
+         Debug\ModelManager.obj
+         Debug\createDefaultVAOs.obj
+         Debug\ObjectLoader.obj
+         Debug\SphereLightVolume.obj
+         Debug\Spotlight.obj
+         Debug\SSAO.obj
+     1>ConeLightVolume.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+            Creating library C:\NGL\Projects\DeferredRenderer\DeferredRenderer.lib and object C:\NGL\Projects\DeferredRenderer\DeferredRenderer.exp
+         DeferredRenderer.vcxproj -> C:\NGL\Projects\DeferredRenderer\DeferredRenderer.exe
+     1>Done Building Project "C:\NGL\Projects\DeferredRenderer\DeferredRenderer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:48.19

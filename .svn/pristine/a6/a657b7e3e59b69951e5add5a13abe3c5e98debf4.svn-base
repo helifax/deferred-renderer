@@ -1,0 +1,11 @@
+\section{Class List}
+Here are the classes, structs, unions and interfaces with brief descriptions\-:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{class_cone_light_volume}{Cone\-Light\-Volume} }{\pageref{class_cone_light_volume}}{}
+\item\contentsline{section}{\hyperlink{class_deferred_shading}{Deferred\-Shading} }{\pageref{class_deferred_shading}}{}
+\item\contentsline{section}{\hyperlink{class_g_l_window}{G\-L\-Window} \\*Our main glwindow widget for N\-G\-L applications all drawing elements are put in this file }{\pageref{class_g_l_window}}{}
+\item\contentsline{section}{\hyperlink{classngl_1_1_light}{ngl\-::\-Light} \\*Simple class to encapsulate Open\-G\-L \hyperlink{classngl_1_1_light}{Light} functions this will fill in the following structure }{\pageref{classngl_1_1_light}}{}
+\item\contentsline{section}{\hyperlink{class_main_window}{Main\-Window} \\*Main re-\/sizable window which contains a \hyperlink{class_g_l_window}{G\-L\-Window} widget used to hold our basic gl applications }{\pageref{class_main_window}}{}
+\item\contentsline{section}{\hyperlink{class_object_loader}{Object\-Loader} }{\pageref{class_object_loader}}{}
+\item\contentsline{section}{\hyperlink{class_sphere_light_volume}{Sphere\-Light\-Volume} }{\pageref{class_sphere_light_volume}}{}
+\item\contentsline{section}{\hyperlink{class_spotlight}{Spotlight} }{\pageref{class_spotlight}}{}
+\end{DoxyCompactList}

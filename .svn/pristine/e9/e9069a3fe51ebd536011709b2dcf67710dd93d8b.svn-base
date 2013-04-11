@@ -1,0 +1,28 @@
+\hypertarget{_cone_light_volume_8h}{\section{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Cone\-Light\-Volume.h File Reference}
+\label{_cone_light_volume_8h}\index{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Cone\-Light\-Volume.\-h@{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Cone\-Light\-Volume.\-h}}
+}
+{\ttfamily \#include $<$ngl/\-V\-A\-O\-Primitives.\-h$>$}\\*
+{\ttfamily \#include $<$ngl/\-Shader\-Lib.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_cone_light_volume}{Cone\-Light\-Volume}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the atributes and methods required for the \hyperlink{class_spotlight}{Spotlight} type light volumes  will store all the necesary information per spotlight, per shader \begin{DoxyAuthor}{Author}
+Octavian Mihai Vasilovici 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/12/2012 Updated to N\-C\-C\-A Coding standard Revision History \-: Initial Version 10/10/2012 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Implement method to return the factor needed in light direction calculation 
+
+Finish the algorithm for Y,Z rotations 
+
+Add a method using Mat4 $\ast$ Vec4 for cone positioning based on a pre-\/given aim vector. \end{DoxyRefDesc}

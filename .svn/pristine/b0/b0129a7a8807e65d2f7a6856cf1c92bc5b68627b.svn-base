@@ -1,0 +1,96 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+the main re-\/sizable window which contains a \hyperlink{class_g_l_window}{G\-L\-Window} widget used to hold our basic gl applications  
+
+
+
+
+{\ttfamily \#include $<$Main\-Window.\-h$>$}
+
+Inheritance diagram for Main\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a93cfdcac35db98baf6a7d2c2738a2006}{Main\-Window} (Q\-Widget $\ast$\-\_\-parent=0)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+\begin{DoxyCompactList}\small\item\em dtor free up the \hyperlink{class_g_l_window}{G\-L\-Window} and all resources \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a3c2e352934c6318d405c3d2b0e07729c}{key\-Press\-Event} (Q\-Key\-Event $\ast$\-\_\-event)
+\begin{DoxyCompactList}\small\item\em override the key\-Press\-Event inherited from Q\-Object so we can handle key presses. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a8ed35ee3d9b815ed32c11d1e13957503}{resize\-Event} (Q\-Resize\-Event $\ast$\-\_\-event)
+\begin{DoxyCompactList}\small\item\em override the resize\-Event inherited from Q\-Object so we can handle key presses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the main re-\/sizable window which contains a \hyperlink{class_g_l_window}{G\-L\-Window} widget used to hold our basic gl applications 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a93cfdcac35db98baf6a7d2c2738a2006}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{\-\_\-parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_a93cfdcac35db98baf6a7d2c2738a2006}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-parent} & the parent window the for this window \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a3c2e352934c6318d405c3d2b0e07729c}{\index{Main\-Window@{Main\-Window}!key\-Press\-Event@{key\-Press\-Event}}
+\index{key\-Press\-Event@{key\-Press\-Event}!MainWindow@{Main\-Window}}
+\subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::key\-Press\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Key\-Event $\ast$}]{\-\_\-event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_main_window_a3c2e352934c6318d405c3d2b0e07729c}
+
+
+override the key\-Press\-Event inherited from Q\-Object so we can handle key presses. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-event} & the event to process \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_a8ed35ee3d9b815ed32c11d1e13957503}{\index{Main\-Window@{Main\-Window}!resize\-Event@{resize\-Event}}
+\index{resize\-Event@{resize\-Event}!MainWindow@{Main\-Window}}
+\subsubsection[{resize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::resize\-Event (
+\begin{DoxyParamCaption}
+\item[{Q\-Resize\-Event $\ast$}]{\-\_\-event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_main_window_a8ed35ee3d9b815ed32c11d1e13957503}
+
+
+override the resize\-Event inherited from Q\-Object so we can handle key presses. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-event} & the event to process \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_main_window_8h}{Main\-Window.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Main\-Window.\-cpp\end{DoxyCompactItemize}

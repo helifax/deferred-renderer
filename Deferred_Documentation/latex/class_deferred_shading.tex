@@ -1,0 +1,107 @@
+\hypertarget{class_deferred_shading}{\section{Deferred\-Shading Class Reference}
+\label{class_deferred_shading}\index{Deferred\-Shading@{Deferred\-Shading}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_deferred_shading_ab7d27bb57a296dcd0927b8382bd75d5f}{\hyperlink{class_deferred_shading_ab7d27bb57a296dcd0927b8382bd75d5f}{Deferred\-Shading} (int \-\_\-width, int \-\_\-height)}\label{class_deferred_shading_ab7d27bb57a296dcd0927b8382bd75d5f}
+
+\begin{DoxyCompactList}\small\item\em ctor setting the same window size as the main application \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ac237f4f2a96e2d9871011f9c9978af85}{\hyperlink{class_deferred_shading_ac237f4f2a96e2d9871011f9c9978af85}{$\sim$\-Deferred\-Shading} ()}\label{class_deferred_shading_ac237f4f2a96e2d9871011f9c9978af85}
+
+\begin{DoxyCompactList}\small\item\em dtor removing all the pointer that are created \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a2fad3267f5e62743175e6f430257ca3a}{void \hyperlink{class_deferred_shading_a2fad3267f5e62743175e6f430257ca3a}{init\-Scene} ()}\label{class_deferred_shading_a2fad3267f5e62743175e6f430257ca3a}
+
+\begin{DoxyCompactList}\small\item\em Initializng Scene. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ab64677da33f7c88f08520b38497eabfa}{void \hyperlink{class_deferred_shading_ab64677da33f7c88f08520b38497eabfa}{set\-Resize\-Scene} (int \&\-\_\-width, int \&\-\_\-height)}\label{class_deferred_shading_ab64677da33f7c88f08520b38497eabfa}
+
+\begin{DoxyCompactList}\small\item\em Set width and height for re-\/draw. \end{DoxyCompactList}\item 
+void \hyperlink{class_deferred_shading_ae61c4970e594173bfe657b8e072cf056}{load\-Deferred\-Shader} (G\-Lint \-\_\-shader\-Number, std\-::string \-\_\-shader\-Program\-Name, std\-::string \-\_\-vertex\-Shader\-File\-Name, std\-::string \-\_\-fragment\-Shader\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Load the specified shaders for light computation. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a6da63e5d421410d9f6a340bba0f9f051}{void \hyperlink{class_deferred_shading_a6da63e5d421410d9f6a340bba0f9f051}{set\-Camera\-Location} (ngl\-::\-Camera $\ast$\-\_\-camera)}\label{class_deferred_shading_a6da63e5d421410d9f6a340bba0f9f051}
+
+\begin{DoxyCompactList}\small\item\em Save our camera location to be used when calculating the different lights. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a4c11b2929a2b9497ef3e69645e4c887e}{void \hyperlink{class_deferred_shading_a4c11b2929a2b9497ef3e69645e4c887e}{start\-Deferred\-Frame} ()}\label{class_deferred_shading_a4c11b2929a2b9497ef3e69645e4c887e}
+
+\begin{DoxyCompactList}\small\item\em Setup the renderer to process a new frame. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a9cc19ee2fb7f38e86481b75963cf74cc}{void \hyperlink{class_deferred_shading_a9cc19ee2fb7f38e86481b75963cf74cc}{do\-Geometry\-Pass} ()}\label{class_deferred_shading_a9cc19ee2fb7f38e86481b75963cf74cc}
+
+\begin{DoxyCompactList}\small\item\em Setup the renderer for Geometry pass. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a4424578aceef5203ad155fc405fd24ef}{void \hyperlink{class_deferred_shading_a4424578aceef5203ad155fc405fd24ef}{start\-Stencil\-Point\-Light} (G\-Lint \&\-\_\-shader\-Number, ngl\-::\-Transform\-Stack \&\-\_\-tx, G\-Lint \&\-\_\-light\-Index)}\label{class_deferred_shading_a4424578aceef5203ad155fc405fd24ef}
+
+\begin{DoxyCompactList}\small\item\em Setup the renderer for Point Lightning pass. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ae9e5e37687b9a8658e99e97c86cc87fe}{void \hyperlink{class_deferred_shading_ae9e5e37687b9a8658e99e97c86cc87fe}{deferred\-Point\-Light} (G\-Lint \&\-\_\-shader\-Number, ngl\-::\-Transform\-Stack \&\-\_\-tx, G\-Lint \&\-\_\-light\-Index)}\label{class_deferred_shading_ae9e5e37687b9a8658e99e97c86cc87fe}
+
+\begin{DoxyCompactList}\small\item\em Render the scene using the specified \-\_\-shader\-Number and the transformation stack using point light. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_aabd36b11f4659769486298e2c17d0d3a}{void \hyperlink{class_deferred_shading_aabd36b11f4659769486298e2c17d0d3a}{start\-Stencil\-Spot\-Light} (G\-Lint \&\-\_\-shader\-Number, ngl\-::\-Transform\-Stack \&\-\_\-tx, G\-Lint \&\-\_\-light\-Index)}\label{class_deferred_shading_aabd36b11f4659769486298e2c17d0d3a}
+
+\begin{DoxyCompactList}\small\item\em Setup the renderer for Spot Lightning pass. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a173c7b9f47fc7274f2959ec64f8baa56}{void \hyperlink{class_deferred_shading_a173c7b9f47fc7274f2959ec64f8baa56}{deferred\-Spot\-Light} (G\-Lint \&\-\_\-shader\-Number, ngl\-::\-Transform\-Stack \&\-\_\-tx, G\-Lint \&\-\_\-light\-Index)}\label{class_deferred_shading_a173c7b9f47fc7274f2959ec64f8baa56}
+
+\begin{DoxyCompactList}\small\item\em Render the scene using the specified \-\_\-shader\-Number and the transformation stack using point light. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a3e16121405f0218c7cfc0b48f7d96236}{void \hyperlink{class_deferred_shading_a3e16121405f0218c7cfc0b48f7d96236}{deferred\-Directional\-Light} (G\-Lint \&\-\_\-shader\-Number, G\-Lint \&\-\_\-light\-Index)}\label{class_deferred_shading_a3e16121405f0218c7cfc0b48f7d96236}
+
+\begin{DoxyCompactList}\small\item\em Render the final scene using the specified \-\_\-shader\-Number and directional light. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_af8fb86b0971f5b2e0fbb01d0fdeb1351}{void \hyperlink{class_deferred_shading_af8fb86b0971f5b2e0fbb01d0fdeb1351}{deferred\-Light\-Final\-Pass} ()}\label{class_deferred_shading_af8fb86b0971f5b2e0fbb01d0fdeb1351}
+
+\begin{DoxyCompactList}\small\item\em Render the final scene. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a8032518b51fccbc065f2f545b219c799}{void \hyperlink{class_deferred_shading_a8032518b51fccbc065f2f545b219c799}{set\-Light\-In\-Scene} (G\-Lint \-\_\-shader\-Number, ngl\-::\-Vec3 \-\_\-light\-Position, ngl\-::\-Colour \-\_\-diffuse\-Color, ngl\-::\-Colour \-\_\-specular\-Color, ngl\-::\-L\-I\-G\-H\-T\-M\-O\-D\-E\-S \-\_\-light\-Type, ngl\-::\-Real \-\_\-\-Radius, ngl\-::\-Real \-\_\-\-Height, ngl\-::\-Vec3 \-\_\-\-Orientation)}\label{class_deferred_shading_a8032518b51fccbc065f2f545b219c799}
+
+\begin{DoxyCompactList}\small\item\em Creates a light type and assigns it to a specific \-\_\-shader\-Number. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_acb695a85a8a9ebf6a0504eb127ad35c7}{void \hyperlink{class_deferred_shading_acb695a85a8a9ebf6a0504eb127ad35c7}{set\-Light\-Attenuation} (G\-Lint \-\_\-shader\-Number, ngl\-::\-Real \-\_\-constant, ngl\-::\-Real \-\_\-linear, ngl\-::\-Real \-\_\-quadratic)}\label{class_deferred_shading_acb695a85a8a9ebf6a0504eb127ad35c7}
+
+\begin{DoxyCompactList}\small\item\em Sets Constant, Linear and Quadratic light attenuations for the light. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ab3d67842a956c661a6790a5f501853a0}{void \hyperlink{class_deferred_shading_ab3d67842a956c661a6790a5f501853a0}{set\-Spot\-Light\-Cut\-Off\-And\-Exponent} (G\-Lint \-\_\-shader\-Number, ngl\-::\-Real \-\_\-exponent, ngl\-::\-Real \-\_\-cut\-Off\-Angle)}\label{class_deferred_shading_ab3d67842a956c661a6790a5f501853a0}
+
+\begin{DoxyCompactList}\small\item\em Sets the Cut\-Off and Exponent for a spot light. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a50f6c59f76ccaca318a793a3e54c18ec}{G\-Lint \hyperlink{class_deferred_shading_a50f6c59f76ccaca318a793a3e54c18ec}{get\-Loaded\-Shaders} () const }\label{class_deferred_shading_a50f6c59f76ccaca318a793a3e54c18ec}
+
+\begin{DoxyCompactList}\small\item\em Return the number of loaded shaders. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_aef3ff57cb1c4c91954ca31b286cdd5f4}{G\-Lint \hyperlink{class_deferred_shading_aef3ff57cb1c4c91954ca31b286cdd5f4}{get\-Light\-Index} (G\-Lint \&\-\_\-shader\-Number) const }\label{class_deferred_shading_aef3ff57cb1c4c91954ca31b286cdd5f4}
+
+\begin{DoxyCompactList}\small\item\em Get the number of lights associated with the current \-\_\-shader\-Number. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_a2b9065454be7772005234dece83b7767}{ngl\-::\-L\-I\-G\-H\-T\-M\-O\-D\-E\-S \hyperlink{class_deferred_shading_a2b9065454be7772005234dece83b7767}{get\-Light\-Type} (G\-Lint \&\-\_\-shader\-Number, G\-Lint \&\-\_\-light\-Index) const }\label{class_deferred_shading_a2b9065454be7772005234dece83b7767}
+
+\begin{DoxyCompactList}\small\item\em Get the type for \-\_\-light\-Index light attached to \-\_\-shader\-Number. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ae7f140a7a77f9f91536826a70b78f782}{void \hyperlink{class_deferred_shading_ae7f140a7a77f9f91536826a70b78f782}{add\-To\-Light\-Position} (G\-Lint \-\_\-shader\-Number, G\-Lint \-\_\-light\-Index, ngl\-::\-Real \-\_\-value\-X, ngl\-::\-Real \-\_\-value\-Y, ngl\-::\-Real \-\_\-value\-Z)}\label{class_deferred_shading_ae7f140a7a77f9f91536826a70b78f782}
+
+\begin{DoxyCompactList}\small\item\em Usefull when a light position needs to be moved based on the mouse. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_acbd0eeaf6a47ff0e1a09e137871dd2a5}{void \hyperlink{class_deferred_shading_acbd0eeaf6a47ff0e1a09e137871dd2a5}{sub\-From\-Light\-Position} (G\-Lint \-\_\-shader\-Number, G\-Lint \-\_\-light\-Index, ngl\-::\-Real \-\_\-value\-X, ngl\-::\-Real \-\_\-value\-Y, ngl\-::\-Real \-\_\-value\-Z)}\label{class_deferred_shading_acbd0eeaf6a47ff0e1a09e137871dd2a5}
+
+\begin{DoxyCompactList}\small\item\em Usefull when a light position needs to be moved based on the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_deferred_shading_a1cebb2748b96504ebd1c3d7e9f910916}{ngl\-::\-V\-A\-O\-Primitives $\ast$ \hyperlink{class_deferred_shading_a1cebb2748b96504ebd1c3d7e9f910916}{prim}}\label{class_deferred_shading_a1cebb2748b96504ebd1c3d7e9f910916}
+
+\begin{DoxyCompactList}\small\item\em V\-A\-O arrays for the cone and the base. \end{DoxyCompactList}\item 
+\hypertarget{class_deferred_shading_ac15bc547106477c9d2fd67c3d5da3857}{bool {\bfseries show\-Volumes}}\label{class_deferred_shading_ac15bc547106477c9d2fd67c3d5da3857}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_deferred_shading_ae61c4970e594173bfe657b8e072cf056}{\index{Deferred\-Shading@{Deferred\-Shading}!load\-Deferred\-Shader@{load\-Deferred\-Shader}}
+\index{load\-Deferred\-Shader@{load\-Deferred\-Shader}!DeferredShading@{Deferred\-Shading}}
+\subsubsection[{load\-Deferred\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}void Deferred\-Shading\-::load\-Deferred\-Shader (
+\begin{DoxyParamCaption}
+\item[{G\-Lint}]{\-\_\-shader\-Number, }
+\item[{std\-::string}]{\-\_\-shader\-Program\-Name, }
+\item[{std\-::string}]{\-\_\-vertex\-Shader\-File\-Name, }
+\item[{std\-::string}]{\-\_\-fragment\-Shader\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_deferred_shading_ae61c4970e594173bfe657b8e072cf056}
+
+
+Load the specified shaders for light computation. 
+
+Expected\-: Shader number (first shader number is 0), Shader program name, Vertex shader filename, Fragment shader filename 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_deferred_shading_8h}{Deferred\-Shading.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Deferred\-Directional\-Light.\-cpp\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Deferred\-Point\-Light.\-cpp\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Deferred\-Shading.\-cpp\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Deferred\-Spot\-Light.\-cpp\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Light\-Manager.\-cpp\end{DoxyCompactItemize}

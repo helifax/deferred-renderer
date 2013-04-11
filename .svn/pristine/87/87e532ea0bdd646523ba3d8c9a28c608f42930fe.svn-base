@@ -1,0 +1,339 @@
+\hypertarget{classngl_1_1_light}{\section{ngl\-:\-:Light Class Reference}
+\label{classngl_1_1_light}\index{ngl\-::\-Light@{ngl\-::\-Light}}
+}
+
+
+Simple class to encapsulate Open\-G\-L \hyperlink{classngl_1_1_light}{Light} functions this will fill in the following structure.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classngl_1_1_light_a627f74ab19975d3c63efc1c1750c65f9}{set\-Position} (const Vec3 \&\-\_\-p)
+\begin{DoxyCompactList}\small\item\em set the light position \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_a523bccc4d967748e2ec6bc9c010b3ea6}{set\-Colour} (const Colour \&\-\_\-c)
+\begin{DoxyCompactList}\small\item\em set the light colour \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_a3921ca844ad910bd45e548c696f29aed}{set\-Spec\-Colour} (const Colour \&\-\_\-c)
+\begin{DoxyCompactList}\small\item\em set the specular colour \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a4ef64392703e2ee243ce03ae8a745e9d}{\hyperlink{classngl_1_1_light_a4ef64392703e2ee243ce03ae8a745e9d}{Light} ()}\label{classngl_1_1_light_a4ef64392703e2ee243ce03ae8a745e9d}
+
+\begin{DoxyCompactList}\small\item\em default constructor this set nothing so the light will not illuminate \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a775bed44aff46ab92a463e7b0d409564}{\hyperlink{classngl_1_1_light_a775bed44aff46ab92a463e7b0d409564}{Light} (const \hyperlink{classngl_1_1_light}{Light} \&\-\_\-l)}\label{classngl_1_1_light_a775bed44aff46ab92a463e7b0d409564}
+
+\begin{DoxyCompactList}\small\item\em copy ctor this set nothing so the light will not illuminate \end{DoxyCompactList}\item 
+\hyperlink{classngl_1_1_light_a1a39ba791902f538c44c8f78f92083f5}{Light} (const Vec3 \&\-\_\-pos, const Colour \&\-\_\-col, L\-I\-G\-H\-T\-M\-O\-D\-E\-S \-\_\-lightmode)
+\begin{DoxyCompactList}\small\item\em ctor to create the light \end{DoxyCompactList}\item 
+\hyperlink{classngl_1_1_light_a64a48426b9821ef040efb0928fd27414}{Light} (const Vec3 \&\-\_\-pos, const Colour \&\-\_\-col, const Colour \&\-\_\-spec\-Colour, L\-I\-G\-H\-T\-M\-O\-D\-E\-S \-\_\-lightmode)
+\begin{DoxyCompactList}\small\item\em ctor to create the light \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a3a304983c33a2ed286299e34d8089d02}{virtual \hyperlink{classngl_1_1_light_a3a304983c33a2ed286299e34d8089d02}{$\sim$\-Light} ()}\label{classngl_1_1_light_a3a304983c33a2ed286299e34d8089d02}
+
+\begin{DoxyCompactList}\small\item\em destructor when light is destroyed we turn it off \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_ad8a265e7c2076ad1c7d24fefd4201df0}{void \hyperlink{classngl_1_1_light_ad8a265e7c2076ad1c7d24fefd4201df0}{disable} ()}\label{classngl_1_1_light_ad8a265e7c2076ad1c7d24fefd4201df0}
+
+\begin{DoxyCompactList}\small\item\em Disable the light by calling gl\-Disable(G\-L\-\_\-\-L\-I\-G\-H\-T0+\-Light\-No);. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classngl_1_1_light_a1fa84fda6ad283674a351aa0fdc7d12a}{enable} ()
+\begin{DoxyCompactList}\small\item\em Enables the light and automatically allocates an Open\-G\-L light I\-D. \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a328389a585ba1efcf6eb08fd5b7b0181}{void \hyperlink{classngl_1_1_light_a328389a585ba1efcf6eb08fd5b7b0181}{show} ()}\label{classngl_1_1_light_a328389a585ba1efcf6eb08fd5b7b0181}
+
+\begin{DoxyCompactList}\small\item\em displays the light in the scene \end{DoxyCompactList}\item 
+Vec4 \& \hyperlink{classngl_1_1_light_a57a8c683f7db93d059a4a2467ac3e980}{get\-Pos} ()
+\begin{DoxyCompactList}\small\item\em returns the current light position as a Vector \end{DoxyCompactList}\item 
+Colour \& \hyperlink{classngl_1_1_light_a8d3daa5594e73456cae3555aac07136d}{get\-Colour} ()
+\begin{DoxyCompactList}\small\item\em returns the current light colour \end{DoxyCompactList}\item 
+Colour \& \hyperlink{classngl_1_1_light_ac7438a00c9bca8655dce924a338d93c6}{get\-Spec\-Colour} ()
+\begin{DoxyCompactList}\small\item\em returns the current light Specular colour \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_afb7b9d8db15a4fd4e923049946e71681}{set\-Attenuation} (Real \-\_\-constant=1.\-0, Real \-\_\-linear=0.\-0, Real \-\_\-quadratic=0.\-0)
+\begin{DoxyCompactList}\small\item\em set the light attenuation \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_a7bc1c8e03bf7647364474b346ec37a09}{write\-X\-M\-L} (Q\-Xml\-Stream\-Writer $\ast$\-\_\-stream, const std\-::string \-\_\-tag=\char`\"{}Light\char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em write class to xml stream \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_a2f082480063a6b066864d4d0f056e4f1}{load\-To\-Shader} (std\-::string \-\_\-uniform\-Name) const 
+\begin{DoxyCompactList}\small\item\em method to load the current light values to the shader that is active at present \end{DoxyCompactList}\item 
+void \hyperlink{classngl_1_1_light_a329aacaa1907e39a44c7bcbd3d4ae0aa}{set\-Transform} (ngl\-::\-Mat4 \&\-\_\-t)
+\begin{DoxyCompactList}\small\item\em set a transform so that the light position is multiplied by this value (default is identity matrix) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classngl_1_1_light_afe8a51aeb598b51b3c42a6ecddd38d08}{Vec4 \hyperlink{classngl_1_1_light_afe8a51aeb598b51b3c42a6ecddd38d08}{m\-\_\-position}}\label{classngl_1_1_light_afe8a51aeb598b51b3c42a6ecddd38d08}
+
+\begin{DoxyCompactList}\small\item\em m\-\_\-pos is used to store the light position w used for point / dir light values \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a7bc1cdc3603b217e66bf4e1d9b1b8e8c}{Colour \hyperlink{classngl_1_1_light_a7bc1cdc3603b217e66bf4e1d9b1b8e8c}{m\-\_\-diffuse}}\label{classngl_1_1_light_a7bc1cdc3603b217e66bf4e1d9b1b8e8c}
+
+\begin{DoxyCompactList}\small\item\em Colour used to give the light a colour. \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_aa12f58491b9237345930721b5ac94932}{Colour \hyperlink{classngl_1_1_light_aa12f58491b9237345930721b5ac94932}{m\-\_\-specular}}\label{classngl_1_1_light_aa12f58491b9237345930721b5ac94932}
+
+\begin{DoxyCompactList}\small\item\em specular highlight colour used for the lights \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_acc8c0099d1b3437bc814d19de9d5025f}{Colour \hyperlink{classngl_1_1_light_acc8c0099d1b3437bc814d19de9d5025f}{m\-\_\-ambient}}\label{classngl_1_1_light_acc8c0099d1b3437bc814d19de9d5025f}
+
+\begin{DoxyCompactList}\small\item\em ambient light colour used for the lights \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_acea764757d046277f3dc5d3f4adf5597}{L\-I\-G\-H\-T\-M\-O\-D\-E\-S \hyperlink{classngl_1_1_light_acea764757d046277f3dc5d3f4adf5597}{m\-\_\-light\-Mode}}\label{classngl_1_1_light_acea764757d046277f3dc5d3f4adf5597}
+
+\begin{DoxyCompactList}\small\item\em used to hold the current lights mode \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_ae599f2dfec737b23af75cbcb6be6613e}{Real \hyperlink{classngl_1_1_light_ae599f2dfec737b23af75cbcb6be6613e}{m\-\_\-constant\-Atten}}\label{classngl_1_1_light_ae599f2dfec737b23af75cbcb6be6613e}
+
+\begin{DoxyCompactList}\small\item\em attenuation value for constant falloff \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_aebe8996368d8c7598cffba36883084e0}{Real \hyperlink{classngl_1_1_light_aebe8996368d8c7598cffba36883084e0}{m\-\_\-linear\-Atten}}\label{classngl_1_1_light_aebe8996368d8c7598cffba36883084e0}
+
+\begin{DoxyCompactList}\small\item\em attenuation value for linear falloff \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a926e5c7567ad0b2e09548dd6a8e60d7c}{Real \hyperlink{classngl_1_1_light_a926e5c7567ad0b2e09548dd6a8e60d7c}{m\-\_\-quadratic\-Atten}}\label{classngl_1_1_light_a926e5c7567ad0b2e09548dd6a8e60d7c}
+
+\begin{DoxyCompactList}\small\item\em attenuation value for Quadratic falloff \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a1cdd46b20e1d7f6e8d4aa01a4b3f72ad}{Real \hyperlink{classngl_1_1_light_a1cdd46b20e1d7f6e8d4aa01a4b3f72ad}{m\-\_\-active}}\label{classngl_1_1_light_a1cdd46b20e1d7f6e8d4aa01a4b3f72ad}
+
+\begin{DoxyCompactList}\small\item\em active if true else off \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_a61ea1115270a6b4798a6383a8c2c1b26}{Real \hyperlink{classngl_1_1_light_a61ea1115270a6b4798a6383a8c2c1b26}{m\-\_\-cutoff\-Angle}}\label{classngl_1_1_light_a61ea1115270a6b4798a6383a8c2c1b26}
+
+\begin{DoxyCompactList}\small\item\em the spot cutoff angle for directional and point lights this is set to 180 by default, and other values are cos(radians(angle)) \end{DoxyCompactList}\item 
+\hypertarget{classngl_1_1_light_ab905d7f0ee91e2a482ce5d4d99bb81fd}{ngl\-::\-Mat4 \hyperlink{classngl_1_1_light_ab905d7f0ee91e2a482ce5d4d99bb81fd}{m\-\_\-transform}}\label{classngl_1_1_light_ab905d7f0ee91e2a482ce5d4d99bb81fd}
+
+\begin{DoxyCompactList}\small\item\em the transform applied to the light before loading to the shader this is usually the inverse projection matrix for normal Open\-G\-L style eye-\/cord calculations but is left for the Application to calculate and pass for easier implementation of different light models \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class to encapsulate Open\-G\-L \hyperlink{classngl_1_1_light}{Light} functions this will fill in the following structure. 
+
+struct Lights \{ vec4 position; vec4 ambient; vec4 diffuse; vec4 specular; \}; \begin{DoxyAuthor}{Author}
+Jon Macey 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+5.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18/08/11 updated to remove deprecated G\-L stuff and all work with glsl 150 Last Revision 29/10/09 Updated to N\-C\-C\-A coding standard 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]this will need to be changed to work with G\-L\-S\-L lights for G\-L\-\_\-\-V\-E\-R\-S\-I\-O\-N $>$ 3.\-x \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classngl_1_1_light_a1a39ba791902f538c44c8f78f92083f5}{\index{ngl\-::\-Light@{ngl\-::\-Light}!Light@{Light}}
+\index{Light@{Light}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}ngl\-::\-Light\-::\-Light (
+\begin{DoxyParamCaption}
+\item[{const Vec3 \&}]{\-\_\-pos, }
+\item[{const Colour \&}]{\-\_\-col, }
+\item[{L\-I\-G\-H\-T\-M\-O\-D\-E\-S}]{\-\_\-lightmode}
+\end{DoxyParamCaption}
+)}}\label{classngl_1_1_light_a1a39ba791902f538c44c8f78f92083f5}
+
+
+ctor to create the light 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-pos} & the light position \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-col} & the light colour \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-lightmode} & the mode to set the light to either local or remote \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a64a48426b9821ef040efb0928fd27414}{\index{ngl\-::\-Light@{ngl\-::\-Light}!Light@{Light}}
+\index{Light@{Light}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{Light}]{\setlength{\rightskip}{0pt plus 5cm}ngl\-::\-Light\-::\-Light (
+\begin{DoxyParamCaption}
+\item[{const Vec3 \&}]{\-\_\-pos, }
+\item[{const Colour \&}]{\-\_\-col, }
+\item[{const Colour \&}]{\-\_\-spec\-Colour, }
+\item[{L\-I\-G\-H\-T\-M\-O\-D\-E\-S}]{\-\_\-lightmode}
+\end{DoxyParamCaption}
+)}}\label{classngl_1_1_light_a64a48426b9821ef040efb0928fd27414}
+
+
+ctor to create the light 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-pos} & the light position \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-col} & the light colour \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-spec\-Colour} & the specular component of the light \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-lightmode} & the mode to set the light to either local or remote \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classngl_1_1_light_a1fa84fda6ad283674a351aa0fdc7d12a}{\index{ngl\-::\-Light@{ngl\-::\-Light}!enable@{enable}}
+\index{enable@{enable}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{enable}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ngl\-::\-Light\-::enable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classngl_1_1_light_a1fa84fda6ad283674a351aa0fdc7d12a}
+
+
+Enables the light and automatically allocates an Open\-G\-L light I\-D. 
+
+\begin{DoxyReturn}{Returns}
+true if there is a free open\-G\-L light I\-D available. 
+\end{DoxyReturn}
+\hypertarget{classngl_1_1_light_a8d3daa5594e73456cae3555aac07136d}{\index{ngl\-::\-Light@{ngl\-::\-Light}!get\-Colour@{get\-Colour}}
+\index{get\-Colour@{get\-Colour}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{get\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}Colour\& ngl\-::\-Light\-::get\-Colour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_a8d3daa5594e73456cae3555aac07136d}
+
+
+returns the current light colour 
+
+\begin{DoxyReturn}{Returns}
+Colour colour 
+\end{DoxyReturn}
+\hypertarget{classngl_1_1_light_a57a8c683f7db93d059a4a2467ac3e980}{\index{ngl\-::\-Light@{ngl\-::\-Light}!get\-Pos@{get\-Pos}}
+\index{get\-Pos@{get\-Pos}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{get\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}Vec4\& ngl\-::\-Light\-::get\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_a57a8c683f7db93d059a4a2467ac3e980}
+
+
+returns the current light position as a Vector 
+
+\begin{DoxyReturn}{Returns}
+Vector pos 
+\end{DoxyReturn}
+\hypertarget{classngl_1_1_light_ac7438a00c9bca8655dce924a338d93c6}{\index{ngl\-::\-Light@{ngl\-::\-Light}!get\-Spec\-Colour@{get\-Spec\-Colour}}
+\index{get\-Spec\-Colour@{get\-Spec\-Colour}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{get\-Spec\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}Colour\& ngl\-::\-Light\-::get\-Spec\-Colour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_ac7438a00c9bca8655dce924a338d93c6}
+
+
+returns the current light Specular colour 
+
+\begin{DoxyReturn}{Returns}
+Colour Spec colour 
+\end{DoxyReturn}
+\hypertarget{classngl_1_1_light_a2f082480063a6b066864d4d0f056e4f1}{\index{ngl\-::\-Light@{ngl\-::\-Light}!load\-To\-Shader@{load\-To\-Shader}}
+\index{load\-To\-Shader@{load\-To\-Shader}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{load\-To\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::load\-To\-Shader (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-uniform\-Name}
+\end{DoxyParamCaption}
+) const}}\label{classngl_1_1_light_a2f082480063a6b066864d4d0f056e4f1}
+
+
+method to load the current light values to the shader that is active at present 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-uniform\-Name} & name of the uniform to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_afb7b9d8db15a4fd4e923049946e71681}{\index{ngl\-::\-Light@{ngl\-::\-Light}!set\-Attenuation@{set\-Attenuation}}
+\index{set\-Attenuation@{set\-Attenuation}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{set\-Attenuation}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::set\-Attenuation (
+\begin{DoxyParamCaption}
+\item[{Real}]{\-\_\-constant = {\ttfamily 1.0}, }
+\item[{Real}]{\-\_\-linear = {\ttfamily 0.0}, }
+\item[{Real}]{\-\_\-quadratic = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{classngl_1_1_light_afb7b9d8db15a4fd4e923049946e71681}
+
+
+set the light attenuation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-constant} & the constant attenuation \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-linear} & attenuation \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-quadratic} & attenuation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a523bccc4d967748e2ec6bc9c010b3ea6}{\index{ngl\-::\-Light@{ngl\-::\-Light}!set\-Colour@{set\-Colour}}
+\index{set\-Colour@{set\-Colour}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{set\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::set\-Colour (
+\begin{DoxyParamCaption}
+\item[{const Colour \&}]{\-\_\-c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_a523bccc4d967748e2ec6bc9c010b3ea6}
+
+
+set the light colour 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-c} & the colour to set \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a627f74ab19975d3c63efc1c1750c65f9}{\index{ngl\-::\-Light@{ngl\-::\-Light}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{const Vec3 \&}]{\-\_\-p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_a627f74ab19975d3c63efc1c1750c65f9}
+
+
+set the light position 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-p} & the new light position \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a3921ca844ad910bd45e548c696f29aed}{\index{ngl\-::\-Light@{ngl\-::\-Light}!set\-Spec\-Colour@{set\-Spec\-Colour}}
+\index{set\-Spec\-Colour@{set\-Spec\-Colour}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{set\-Spec\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::set\-Spec\-Colour (
+\begin{DoxyParamCaption}
+\item[{const Colour \&}]{\-\_\-c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classngl_1_1_light_a3921ca844ad910bd45e548c696f29aed}
+
+
+set the specular colour 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-c} & the colour to set for the specular \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a329aacaa1907e39a44c7bcbd3d4ae0aa}{\index{ngl\-::\-Light@{ngl\-::\-Light}!set\-Transform@{set\-Transform}}
+\index{set\-Transform@{set\-Transform}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{set\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::set\-Transform (
+\begin{DoxyParamCaption}
+\item[{ngl\-::\-Mat4 \&}]{\-\_\-t}
+\end{DoxyParamCaption}
+)}}\label{classngl_1_1_light_a329aacaa1907e39a44c7bcbd3d4ae0aa}
+
+
+set a transform so that the light position is multiplied by this value (default is identity matrix) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-t} & the transform matrix \\
+\hline
+\end{DoxyParams}
+\hypertarget{classngl_1_1_light_a7bc1c8e03bf7647364474b346ec37a09}{\index{ngl\-::\-Light@{ngl\-::\-Light}!write\-X\-M\-L@{write\-X\-M\-L}}
+\index{write\-X\-M\-L@{write\-X\-M\-L}!ngl::Light@{ngl\-::\-Light}}
+\subsubsection[{write\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}void ngl\-::\-Light\-::write\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{Q\-Xml\-Stream\-Writer $\ast$}]{\-\_\-stream, }
+\item[{const std\-::string}]{\-\_\-tag = {\ttfamily \char`\"{}Light\char`\"{}}}
+\end{DoxyParamCaption}
+) const}}\label{classngl_1_1_light_a7bc1c8e03bf7647364474b346ec37a09}
+
+
+write class to xml stream 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-stream} & the xml stream to write to \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-name} & an overidable token name for the xml tag \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/ngl/\hyperlink{_light_8h}{Light.\-h}\end{DoxyCompactItemize}

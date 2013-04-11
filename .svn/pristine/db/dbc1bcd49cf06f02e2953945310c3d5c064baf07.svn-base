@@ -1,0 +1,24 @@
+\hypertarget{_sphere_light_volume_8h}{\section{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Sphere\-Light\-Volume.h File Reference}
+\label{_sphere_light_volume_8h}\index{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Sphere\-Light\-Volume.\-h@{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Sphere\-Light\-Volume.\-h}}
+}
+{\ttfamily \#include $<$ngl/\-V\-A\-O\-Primitives.\-h$>$}\\*
+{\ttfamily \#include $<$ngl/\-Shader\-Lib.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_sphere_light_volume}{Sphere\-Light\-Volume}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the atributes and methods required for the pointlight type light volumes \begin{DoxyAuthor}{Author}
+Octavian Mihai Vasilovici 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/12/2012 Updated to N\-C\-C\-A Coding standard Revision History \-: Initial Version 10/10/2012 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]\end{DoxyRefDesc}

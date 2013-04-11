@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['setattenuation',['setAttenuation',['../classngl_1_1_light.html#afb7b9d8db15a4fd4e923049946e71681',1,'ngl::Light::setAttenuation()'],['../class_spotlight.html#a1dae94388e42102f2a47827f910a0456',1,'Spotlight::setAttenuation()']]],
+  ['setcameralocation',['setCameraLocation',['../class_deferred_shading.html#a6da63e5d421410d9f6a340bba0f9f051',1,'DeferredShading']]],
+  ['setcolour',['setColour',['../classngl_1_1_light.html#a523bccc4d967748e2ec6bc9c010b3ea6',1,'ngl::Light']]],
+  ['setdiffusecolour',['setDiffuseColour',['../class_spotlight.html#afdaf9c320aabd1c2f9a1b69e25b3dd60',1,'Spotlight']]],
+  ['setlightattenuation',['setLightAttenuation',['../class_deferred_shading.html#acb695a85a8a9ebf6a0504eb127ad35c7',1,'DeferredShading']]],
+  ['setlightcutoff',['setLightCutOff',['../class_spotlight.html#aba754104e9f7264bea2bf48a71f3fcf4',1,'Spotlight']]],
+  ['setlightdirection',['setLightDirection',['../class_spotlight.html#ab6fdfaa6a6def5a9701808860a4f526e',1,'Spotlight']]],
+  ['setlightexponent',['setLightExponent',['../class_spotlight.html#a2f56c492e9abaeb4e369af6dab48e102',1,'Spotlight']]],
+  ['setlightinscene',['setLightInScene',['../class_deferred_shading.html#a8032518b51fccbc065f2f545b219c799',1,'DeferredShading']]],
+  ['setposition',['setPosition',['../classngl_1_1_light.html#a627f74ab19975d3c63efc1c1750c65f9',1,'ngl::Light::setPosition()'],['../class_spotlight.html#aced2dc7f5c021149079ca8b2538348ee',1,'Spotlight::setPosition()']]],
+  ['setresizescene',['setResizeScene',['../class_deferred_shading.html#ab64677da33f7c88f08520b38497eabfa',1,'DeferredShading']]],
+  ['setshaderasactive',['setShaderAsActive',['../class_object_loader.html#a1545820e46bc97530d34454b2bfe7b20',1,'ObjectLoader']]],
+  ['setspeccolour',['setSpecColour',['../classngl_1_1_light.html#a3921ca844ad910bd45e548c696f29aed',1,'ngl::Light']]],
+  ['setspecularcolour',['setSpecularColour',['../class_spotlight.html#a764d787d1d91db4aa2bd222aaff85937',1,'Spotlight']]],
+  ['setspotlightcutoffandexponent',['setSpotLightCutOffAndExponent',['../class_deferred_shading.html#ab3d67842a956c661a6790a5f501853a0',1,'DeferredShading']]],
+  ['settransform',['setTransform',['../classngl_1_1_light.html#a329aacaa1907e39a44c7bcbd3d4ae0aa',1,'ngl::Light']]],
+  ['show',['show',['../classngl_1_1_light.html#a328389a585ba1efcf6eb08fd5b7b0181',1,'ngl::Light']]],
+  ['spherelightvolume',['SphereLightVolume',['../class_sphere_light_volume.html#afab1c6d39f74707a7296f06b19238981',1,'SphereLightVolume']]],
+  ['spotlight',['Spotlight',['../class_spotlight.html#a9dde51683e22cbf19e1c85d22ddbb41e',1,'Spotlight']]],
+  ['startdeferredframe',['startDeferredFrame',['../class_deferred_shading.html#a4c11b2929a2b9497ef3e69645e4c887e',1,'DeferredShading']]],
+  ['startstencilpointlight',['startStencilPointLight',['../class_deferred_shading.html#a4424578aceef5203ad155fc405fd24ef',1,'DeferredShading']]],
+  ['startstencilspotlight',['startStencilSpotLight',['../class_deferred_shading.html#aabd36b11f4659769486298e2c17d0d3a',1,'DeferredShading']]],
+  ['subfromlightposition',['subFromLightPosition',['../class_deferred_shading.html#acbd0eeaf6a47ff0e1a09e137871dd2a5',1,'DeferredShading']]]
+];

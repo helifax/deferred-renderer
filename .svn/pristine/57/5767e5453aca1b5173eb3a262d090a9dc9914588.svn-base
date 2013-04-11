@@ -1,0 +1,8 @@
+\hypertarget{dir_65c304ca014dd18ed404ee0476586ae8}{\section{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/ngl Directory Reference}
+\label{dir_65c304ca014dd18ed404ee0476586ae8}\index{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/ngl Directory Reference@{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/ngl Directory Reference}}
+}
+\subsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \hyperlink{_light_8h}{Light.\-h}
+\begin{DoxyCompactList}\small\item\em an encapsulation of an Open\-G\-L Light \end{DoxyCompactList}\end{DoxyCompactItemize}

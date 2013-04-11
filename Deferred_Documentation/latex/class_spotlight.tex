@@ -1,0 +1,124 @@
+\hypertarget{class_spotlight}{\section{Spotlight Class Reference}
+\label{class_spotlight}\index{Spotlight@{Spotlight}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spotlight_a9dde51683e22cbf19e1c85d22ddbb41e}{Spotlight} (ngl\-::\-Vec3 \&\-\_\-light\-Position, ngl\-::\-Colour \&\-\_\-diffuse\-Color, ngl\-::\-Colour \&\-\_\-specular\-Color)
+\begin{DoxyCompactList}\small\item\em ctor for creating a new spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_aac994b82b318f9b5c0f7ae6553a50662}{\hyperlink{class_spotlight_aac994b82b318f9b5c0f7ae6553a50662}{$\sim$\-Spotlight} ()}\label{class_spotlight_aac994b82b318f9b5c0f7ae6553a50662}
+
+\begin{DoxyCompactList}\small\item\em default dtor \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_afdaf9c320aabd1c2f9a1b69e25b3dd60}{void \hyperlink{class_spotlight_afdaf9c320aabd1c2f9a1b69e25b3dd60}{set\-Diffuse\-Colour} (ngl\-::\-Colour \&\-\_\-diffuse\-Color)}\label{class_spotlight_afdaf9c320aabd1c2f9a1b69e25b3dd60}
+
+\begin{DoxyCompactList}\small\item\em Sets a new diffuse\-Color for the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_a764d787d1d91db4aa2bd222aaff85937}{void \hyperlink{class_spotlight_a764d787d1d91db4aa2bd222aaff85937}{set\-Specular\-Colour} (ngl\-::\-Colour \&\-\_\-specular\-Color)}\label{class_spotlight_a764d787d1d91db4aa2bd222aaff85937}
+
+\begin{DoxyCompactList}\small\item\em Sets a new specular\-Color for the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_aced2dc7f5c021149079ca8b2538348ee}{void \hyperlink{class_spotlight_aced2dc7f5c021149079ca8b2538348ee}{set\-Position} (ngl\-::\-Vec3 \&\-\_\-light\-Position)}\label{class_spotlight_aced2dc7f5c021149079ca8b2538348ee}
+
+\begin{DoxyCompactList}\small\item\em Sets a new position for the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_ab6fdfaa6a6def5a9701808860a4f526e}{void \hyperlink{class_spotlight_ab6fdfaa6a6def5a9701808860a4f526e}{set\-Light\-Direction} (ngl\-::\-Vec3 \&\-\_\-light\-Direction)}\label{class_spotlight_ab6fdfaa6a6def5a9701808860a4f526e}
+
+\begin{DoxyCompactList}\small\item\em Sets the light direction for the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_ad6e64c6ba6b37f254a2d34828d5b5dca}{ngl\-::\-Colour \hyperlink{class_spotlight_ad6e64c6ba6b37f254a2d34828d5b5dca}{get\-Diffuse\-Colour} () const }\label{class_spotlight_ad6e64c6ba6b37f254a2d34828d5b5dca}
+
+\begin{DoxyCompactList}\small\item\em Returns the diffuse Color of the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_ab34ec42fc75c928dee0590e267b72cb6}{ngl\-::\-Colour \hyperlink{class_spotlight_ab34ec42fc75c928dee0590e267b72cb6}{get\-Specular\-Colour} () const }\label{class_spotlight_ab34ec42fc75c928dee0590e267b72cb6}
+
+\begin{DoxyCompactList}\small\item\em Returns the specular Color of the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_adfb7b5d18dbebf53ab28bf00db8bf257}{ngl\-::\-Vec4 \hyperlink{class_spotlight_adfb7b5d18dbebf53ab28bf00db8bf257}{get\-Position} () const }\label{class_spotlight_adfb7b5d18dbebf53ab28bf00db8bf257}
+
+\begin{DoxyCompactList}\small\item\em Returns the position of the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_a1ceb4616c595ddabf3585cb707e5385f}{ngl\-::\-Vec3 \hyperlink{class_spotlight_a1ceb4616c595ddabf3585cb707e5385f}{get\-Light\-Direction} () const }\label{class_spotlight_a1ceb4616c595ddabf3585cb707e5385f}
+
+\begin{DoxyCompactList}\small\item\em Returns the light direction of the spotlight. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_a2f56c492e9abaeb4e369af6dab48e102}{void \hyperlink{class_spotlight_a2f56c492e9abaeb4e369af6dab48e102}{set\-Light\-Exponent} (const float \&\-\_\-exponent)}\label{class_spotlight_a2f56c492e9abaeb4e369af6dab48e102}
+
+\begin{DoxyCompactList}\small\item\em Sets the light exponent value. \end{DoxyCompactList}\item 
+\hypertarget{class_spotlight_aba754104e9f7264bea2bf48a71f3fcf4}{void \hyperlink{class_spotlight_aba754104e9f7264bea2bf48a71f3fcf4}{set\-Light\-Cut\-Off} (const float \&\-\_\-cutoff)}\label{class_spotlight_aba754104e9f7264bea2bf48a71f3fcf4}
+
+\begin{DoxyCompactList}\small\item\em Sets the light cutoff value in degrees. Maximum value is 90.\-0f. \end{DoxyCompactList}\item 
+void \hyperlink{class_spotlight_a2776899fe7b50bb5e701549ed48b5f60}{load\-To\-Shader} (std\-::string \-\_\-uniform)
+\begin{DoxyCompactList}\small\item\em loads the light information to the shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_spotlight_a1dae94388e42102f2a47827f910a0456}{set\-Attenuation} (ngl\-::\-Real \-\_\-constant, ngl\-::\-Real \-\_\-linear, ngl\-::\-Real \-\_\-quadratic)
+\begin{DoxyCompactList}\small\item\em Sets the light attenuation factors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_spotlight_a79b45563197a5f6aa479a96e5541a384}{ngl\-::\-Vec3 {\bfseries m\-\_\-position}}\label{class_spotlight_a79b45563197a5f6aa479a96e5541a384}
+
+\item 
+\hypertarget{class_spotlight_adb29fe2679be5de4bec1bd1f7246da32}{ngl\-::\-Vec3 {\bfseries m\-\_\-light\-Direction}}\label{class_spotlight_adb29fe2679be5de4bec1bd1f7246da32}
+
+\item 
+\hypertarget{class_spotlight_a3caa27136d2c18fb0083e68e3781ec88}{ngl\-::\-Colour {\bfseries m\-\_\-diffuse\-Colour}}\label{class_spotlight_a3caa27136d2c18fb0083e68e3781ec88}
+
+\item 
+\hypertarget{class_spotlight_a7e08276b56e4bad75a5514f439e67b3b}{ngl\-::\-Colour {\bfseries m\-\_\-specular\-Color}}\label{class_spotlight_a7e08276b56e4bad75a5514f439e67b3b}
+
+\item 
+\hypertarget{class_spotlight_ab0b93b9ac222b052d90cacb430814d5a}{float {\bfseries m\-\_\-exponent}}\label{class_spotlight_ab0b93b9ac222b052d90cacb430814d5a}
+
+\item 
+\hypertarget{class_spotlight_aa795e9456c3dac6acb68982bd56dd013}{float {\bfseries m\-\_\-cuttoff}}\label{class_spotlight_aa795e9456c3dac6acb68982bd56dd013}
+
+\item 
+\hypertarget{class_spotlight_ae1de74c3d7dd61fc6e1a436e7d70901d}{ngl\-::\-Real {\bfseries m\-\_\-constant\-Atten}}\label{class_spotlight_ae1de74c3d7dd61fc6e1a436e7d70901d}
+
+\item 
+\hypertarget{class_spotlight_af44479e2606cbfa74de8c7704e7c9aa6}{ngl\-::\-Real {\bfseries m\-\_\-linear\-Atten}}\label{class_spotlight_af44479e2606cbfa74de8c7704e7c9aa6}
+
+\item 
+\hypertarget{class_spotlight_a00fc1eb38b78d60c026f1c4dd4d73684}{ngl\-::\-Real {\bfseries m\-\_\-quadratic\-Atten}}\label{class_spotlight_a00fc1eb38b78d60c026f1c4dd4d73684}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_spotlight_a9dde51683e22cbf19e1c85d22ddbb41e}{\index{Spotlight@{Spotlight}!Spotlight@{Spotlight}}
+\index{Spotlight@{Spotlight}!Spotlight@{Spotlight}}
+\subsubsection[{Spotlight}]{\setlength{\rightskip}{0pt plus 5cm}Spotlight\-::\-Spotlight (
+\begin{DoxyParamCaption}
+\item[{ngl\-::\-Vec3 \&}]{\-\_\-light\-Position, }
+\item[{ngl\-::\-Colour \&}]{\-\_\-diffuse\-Color, }
+\item[{ngl\-::\-Colour \&}]{\-\_\-specular\-Color}
+\end{DoxyParamCaption}
+)}}\label{class_spotlight_a9dde51683e22cbf19e1c85d22ddbb41e}
+
+
+ctor for creating a new spotlight. 
+
+Reguired parameters\-: light position light diffuse color light specular color 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_spotlight_a2776899fe7b50bb5e701549ed48b5f60}{\index{Spotlight@{Spotlight}!load\-To\-Shader@{load\-To\-Shader}}
+\index{load\-To\-Shader@{load\-To\-Shader}!Spotlight@{Spotlight}}
+\subsubsection[{load\-To\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}void Spotlight\-::load\-To\-Shader (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{\-\_\-uniform}
+\end{DoxyParamCaption}
+)}}\label{class_spotlight_a2776899fe7b50bb5e701549ed48b5f60}
+
+
+loads the light information to the shader. 
+
+Expects the uniform value \hypertarget{class_spotlight_a1dae94388e42102f2a47827f910a0456}{\index{Spotlight@{Spotlight}!set\-Attenuation@{set\-Attenuation}}
+\index{set\-Attenuation@{set\-Attenuation}!Spotlight@{Spotlight}}
+\subsubsection[{set\-Attenuation}]{\setlength{\rightskip}{0pt plus 5cm}void Spotlight\-::set\-Attenuation (
+\begin{DoxyParamCaption}
+\item[{ngl\-::\-Real}]{\-\_\-constant, }
+\item[{ngl\-::\-Real}]{\-\_\-linear, }
+\item[{ngl\-::\-Real}]{\-\_\-quadratic}
+\end{DoxyParamCaption}
+)}}\label{class_spotlight_a1dae94388e42102f2a47827f910a0456}
+
+
+Sets the light attenuation factors. 
+
+Expected\-: Constant attenuation Linear attenuation Quadratic attenuation 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_spot_light_8h}{Spot\-Light.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/Spotlight.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{class_g_l_window}{\section{G\-L\-Window Class Reference}
+\label{class_g_l_window}\index{G\-L\-Window@{G\-L\-Window}}
+}
+
+
+our main glwindow widget for N\-G\-L applications all drawing elements are put in this file  
+
+
+
+
+{\ttfamily \#include $<$G\-L\-Window.\-h$>$}
+
+Inheritance diagram for G\-L\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_l_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_l_window_a8dfc33113be0a86a53ddbea054f75292}{G\-L\-Window} (Q\-Widget $\ast$\-\_\-parent)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_g_l_window}{G\-L\-Window}. \end{DoxyCompactList}\item 
+\hypertarget{class_g_l_window_a2eeaea2148f4f72344edd6d1bac9759b}{\hyperlink{class_g_l_window_a2eeaea2148f4f72344edd6d1bac9759b}{$\sim$\-G\-L\-Window} ()}\label{class_g_l_window_a2eeaea2148f4f72344edd6d1bac9759b}
+
+\begin{DoxyCompactList}\small\item\em dtor \end{DoxyCompactList}\item 
+\hypertarget{class_g_l_window_ae5d67b7c79c49fac1ee075ec62fa7131}{void {\bfseries toggle\-Animation} ()}\label{class_g_l_window_ae5d67b7c79c49fac1ee075ec62fa7131}
+
+\item 
+\hypertarget{class_g_l_window_a72623f17bba6e8b6448efb0572bbdd00}{void {\bfseries process\-Key} (Q\-Key\-Event $\ast$\-\_\-event)}\label{class_g_l_window_a72623f17bba6e8b6448efb0572bbdd00}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_g_l_window_a39e39761cd7323806917a217cc7caea5}{void \hyperlink{class_g_l_window_a39e39761cd7323806917a217cc7caea5}{initialize\-G\-L} ()}\label{class_g_l_window_a39e39761cd7323806917a217cc7caea5}
+
+\begin{DoxyCompactList}\small\item\em The following methods must be implimented in the sub class this is called when the window is created. \end{DoxyCompactList}\item 
+void \hyperlink{class_g_l_window_abe57c0f40e59cba4c98759121e22eb47}{resize\-G\-L} (const int \-\_\-w, const int \-\_\-h)
+\begin{DoxyCompactList}\small\item\em this is called whenever the window is re-\/sized \end{DoxyCompactList}\item 
+\hypertarget{class_g_l_window_a9bd2503dd5f812c10a9481f22ecd3403}{void \hyperlink{class_g_l_window_a9bd2503dd5f812c10a9481f22ecd3403}{paint\-G\-L} ()}\label{class_g_l_window_a9bd2503dd5f812c10a9481f22ecd3403}
+
+\begin{DoxyCompactList}\small\item\em this is the main gl drawing routine which is called whenever the window needs to be re-\/drawn \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+our main glwindow widget for N\-G\-L applications all drawing elements are put in this file 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_g_l_window_a8dfc33113be0a86a53ddbea054f75292}{\index{G\-L\-Window@{G\-L\-Window}!G\-L\-Window@{G\-L\-Window}}
+\index{G\-L\-Window@{G\-L\-Window}!GLWindow@{G\-L\-Window}}
+\subsubsection[{G\-L\-Window}]{\setlength{\rightskip}{0pt plus 5cm}G\-L\-Window\-::\-G\-L\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{\-\_\-parent}
+\end{DoxyParamCaption}
+)}}\label{class_g_l_window_a8dfc33113be0a86a53ddbea054f75292}
+
+
+Constructor for \hyperlink{class_g_l_window}{G\-L\-Window}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-parent} & the parent window to create the G\-L context in \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_g_l_window_abe57c0f40e59cba4c98759121e22eb47}{\index{G\-L\-Window@{G\-L\-Window}!resize\-G\-L@{resize\-G\-L}}
+\index{resize\-G\-L@{resize\-G\-L}!GLWindow@{G\-L\-Window}}
+\subsubsection[{resize\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void G\-L\-Window\-::resize\-G\-L (
+\begin{DoxyParamCaption}
+\item[{const int}]{\-\_\-w, }
+\item[{const int}]{\-\_\-h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_g_l_window_abe57c0f40e59cba4c98759121e22eb47}
+
+
+this is called whenever the window is re-\/sized 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \-\_\-w} & the width of the resized window \\
+\hline
+\mbox{\tt in}  & {\em \-\_\-h} & the height of the resized window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\hyperlink{_g_l_window_8h}{G\-L\-Window.\-h}\item 
+C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/src/G\-L\-Window.\-cpp\end{DoxyCompactItemize}

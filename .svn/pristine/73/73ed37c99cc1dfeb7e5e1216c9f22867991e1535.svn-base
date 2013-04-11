@@ -1,0 +1,37 @@
+\hypertarget{_deferred_shading_8h}{\section{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Deferred\-Shading.h File Reference}
+\label{_deferred_shading_8h}\index{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Deferred\-Shading.\-h@{C\-:/\-N\-G\-L/\-Projects/\-Deferred\-Renderer/include/\-Deferred\-Shading.\-h}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$ngl/\-Shader\-Lib.\-h$>$}\\*
+{\ttfamily \#include $<$ngl/\-Camera.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Object\-Loader.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_deferred_shading}{Deferred\-Shading}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_deferred_shading_8h_a2202b79a4ad6f656557d8b2c8e4231da}{\#define {\bfseries \-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-S\-H\-A\-D\-I\-N\-G\-\_\-\-H\-\_\-}}\label{_deferred_shading_8h_a2202b79a4ad6f656557d8b2c8e4231da}
+
+\item 
+\hypertarget{_deferred_shading_8h_ac892917f6711e7f699d74da5201c3b78}{\#define {\bfseries \-\_\-\-M\-A\-X\-I\-M\-U\-M\-\_\-\-L\-I\-G\-H\-T\-S\-\_\-\-S\-H\-A\-D\-E\-R\-S\-\_\-}~(4)}\label{_deferred_shading_8h_ac892917f6711e7f699d74da5201c3b78}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the atributes and methods required for Deferred Shading \begin{DoxyAuthor}{Author}
+Octavian Mihai Vasilovici 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10/10/2012 Updated to N\-C\-C\-A Coding standard Revision History \-: Initial Version 10/10/2012 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Change the O\-B\-J\-Loader array with a vector since we can have 
+
+for example 20 pointlights each with its shader. \end{DoxyRefDesc}
